@@ -25,20 +25,20 @@ Konta portal-only nie zajmują licencji agenta i są bezpłatne na planie Free.
 
 | ID | Tytuł | Reporter | Priorytet | Kategoria | Status końcowy |
 |---|---|---|---|---|---|
-| HELP-001 | Nie mogę się zalogować – konto zablokowane | Anna Kowalska | High | Zarządzanie kontami | Resolved |
-| HELP-002 | Zniknął dysk Z: po powrocie z urlopu | Marek Tomaszewski | Medium | Sieć / Uprawnienia | Resolved |
-| HELP-003 | Drukarka w pokoju 204 nie drukuje | Katarzyna Wróbel | Medium | Sprzęt / Hardware | Resolved |
-| HELP-004 | Brak internetu i dostępu do CRM | Piotr Zając | High | Sieć / Łączność | Resolved |
-| HELP-005 | Komputer działa bardzo wolno | Joanna Nowak | Medium | Wydajność / Software | Resolved |
-| HELP-006 | Kliknąłem link w mailu – podejrzenie phishingu | Robert Michalski | High | Bezpieczeństwo IT | Resolved |
+| JTSL1 | Nie mogę się zalogować – konto zablokowane | Anna Kowalska | High | Zarządzanie kontami | Resolved |
+| JTSL2 | Zniknął dysk Z: po powrocie z urlopu | Marek Tomaszewski | Medium | Sieć / Uprawnienia | Resolved |
+| JTSL3 | Drukarka w pokoju 204 nie drukuje | Katarzyna Wróbel | Medium | Sprzęt / Hardware | Resolved |
+| JTSL4 | Brak internetu i dostępu do CRM | Piotr Zając | High | Sieć / Łączność | Resolved |
+| JTSL5 | Komputer działa bardzo wolno | Joanna Nowak | Medium | Wydajność / Software | Escalated |
+| JTSL8 | Kliknąłem link w mailu – podejrzenie phishingu | Robert Michalski | High | Bezpieczeństwo IT | Escalated |
 
 ---
 
 ## Opisy zgłoszeń
 
-### HELP-001 · Anna Kowalska · High
+### JTSL1 · Anna Kowalska · High
 
-**Zgłoszone:** dziś, 08:14 · Pokój 112
+**Zgłoszone:** 06.05.2025, 08:14 · Pokój 112
 
 > Dzień dobry, od rana nie mogę zalogować się do komputera. Wpisuję hasło i wyskakuje komunikat że konto jest zablokowane. Próbowałam kilka razy wczoraj wieczorem bo hasło mi nie działało po tym jak je zmieniłam zdalnie i chyba za dużo razy się pomyliłam.
 >
@@ -48,11 +48,11 @@ Konta portal-only nie zajmują licencji agenta i są bezpłatne na planie Free.
 
 ---
 
-### HELP-002 · Marek Tomaszewski · Medium
+### JTSL2· Marek Tomaszewski · Medium
 
-**Zgłoszone:** dziś, 09:02 · Open space, biurko M14
+**Zgłoszone:** 06.05.2025, 09:02 · Open space, biurko M14
 
-> Hej, wróciłem dziś z 2-tygodniowego urlopu i nie widzę dysku Z: w eksploratorze. Przed urlopem wszystko działało normalnie. Inne dyski (C: i D:) są widoczne.
+> Hej, wróciłem 06.05.2025 z 2-tygodniowego urlopu i nie widzę dysku Z: w eksploratorze. Przed urlopem wszystko działało normalnie. Inne dyski (C: i D:) są widoczne.
 >
 > Próbowałem wyłączyć i włączyć komputer – nie pomogło. Kolega z biurka obok ma ten dysk bez problemu, więc chyba coś z moim kontem?
 >
@@ -60,37 +60,37 @@ Konta portal-only nie zajmują licencji agenta i są bezpłatne na planie Free.
 
 ---
 
-### HELP-003 · Katarzyna Wróbel · Medium
+### JTSL3 · Katarzyna Wróbel · Medium
 
-**Zgłoszone:** dziś, 09:47 · Pokój 204
+**Zgłoszone:** 06.05.2025, 09:47 · Pokój 204
 
 > Dzień dobry, drukarka HP w pokoju 204 przestała działać. Wysyłam wydruk, system pokazuje że wysłano, ale nic nie wychodzi z drukarki. Drukarka jest włączona, świeci się normalnie, żadnego błędu na wyświetlaczu nie widać.
 >
 > Sprawdziłam czy jest papier – jest. Prosiłam też Pana Krzysztofa żeby spróbował ze swojego komputera – u niego też nie działa.
 >
-> Czekamy już z 3 osoby, mamy dokumenty do wydrukowania na spotkanie o 11:00.
+> Czekamy już z 3 osoby, mamy dokumenty do wydrukowania.
 
 ---
 
-### HELP-004 · Piotr Zając · High
+### JTSL4 · Piotr Zając · High
 
-**Zgłoszone:** dziś, 09:11 · Biuro sprzedaży, stanowisko 12B
+**Zgłoszone:** 06.05.2025, 09:11 · Biuro sprzedaży, stanowisko 12B
 
 > Cześć, od ok. 9:00 nie mam internetu ani dostępu do niczego firmowego. Strony nie ładują, CRM nie działa, Teams się rozłączył. Kabel siedzi w komputerze, lampka na karcie sieciowej nie miga (normalnie miga).
 >
 > Kolega po drugiej stronie biurka (stanowisko 13A) ma internet bez problemu. Restartowałem komputer dwa razy – bez efektu.
 >
-> Mam dziś kilka ważnych telefonów z klientami i muszę mieć dostęp do systemu. To pilne.
+> Mam 06.05.2025 kilka ważnych telefonów z klientami i muszę mieć dostęp do systemu. To pilne.
 >
 > Stanowisko: 12B · Komputer: SALES-PC12
 
 ---
 
-### HELP-005 · Joanna Nowak · Medium
+### JTSL5 · Joanna Nowak · Medium
 
-**Zgłoszone:** dziś, 10:22 · HR, pokój 301
+**Zgłoszone:** 06.05.2025, 10:22 · HR, pokój 301
 
-> Dzień dobry, mój komputer od kilku dni działa coraz wolniej, ale dziś jest już naprawdę nieznośnie. Otwarcie Outlooka zajmuje ponad 5 minut, a jak próbuję otworzyć plik Excel z bazą pracowników (ok. 3000 wierszy) to komputer się zawiesza i muszę go wyłączać z przycisku.
+> Dzień dobry, mój komputer od kilku dni działa coraz wolniej, ale 06.05.2025 jest już naprawdę nieznośnie. Otwarcie Outlooka zajmuje ponad 5 minut, a jak próbuję otworzyć plik Excel z bazą pracowników (ok. 3000 wierszy) to komputer się zawiesza i muszę go wyłączać z przycisku.
 >
 > Nie instalowałam ostatnio żadnych nowych programów. Nie wiem co się dzieje, może jakiś wirus?
 >
@@ -98,11 +98,11 @@ Konta portal-only nie zajmują licencji agenta i są bezpłatne na planie Free.
 
 ---
 
-### HELP-006 · Robert Michalski · High
+### JTSL8 · Robert Michalski · High
 
-**Zgłoszone:** dziś, 08:51 · Magazyn, biuro logistyki
+**Zgłoszone:** 06.05.2025, 08:51 · Magazyn, biuro logistyki
 
-> Hej, dostałem dziś rano maila od "IT Dział Wsparcia" z informacją że moje hasło wygasa i muszę je natychmiast zmienić przez link. Kliknąłem, otworzyła się strona która wyglądała jak nasza firmowa, wpisałem login i hasło...
+> Hej, dostałem 06.05.2025 rano maila od "IT Dział Wsparcia" z informacją że moje hasło wygasa i muszę je natychmiast zmienić przez link. Kliknąłem, otworzyła się strona która wyglądała jak nasza firmowa, wpisałem login i hasło...
 >
 > Ale potem mnie uderzyło że adres strony był dziwny – coś w stylu "firma-it-support.info" a nie nasza normalna domena. Myślę że to był phishing.
 >

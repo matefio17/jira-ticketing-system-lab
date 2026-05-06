@@ -57,7 +57,7 @@ Projekt został zaprojektowany tak, aby odwzorować realne zadania wykonywane na
 
    • Praktyczna nauka obsługi systemu ticketowego Jira Service Management w kontekście wsparcia IT
 
-   • Poznanie cyklu życia zgłoszenia: przyjęcie, diagnoza, rozwiązanie, zamkniecie
+   • Poznanie cyklu życia zgłoszenia: przyjęcie, diagnoza, rozwiązanie, zamknięcie
 
    • Ćwiczenie priorytetyzacji zadań (Low / Medium / High) i reakcji na incydenty
 
@@ -91,12 +91,14 @@ jira-ticketing-system-lab
 
 ├── README.md
 ├── screenshots
-│   ├── 01_ticketting_system_board.png
+│   ├── 01_ticketing_system_board.png
 │   ├── 02_ticket_list.png
 │   ├── 03_JTSL1_resolved.png
-│   ├── 04_JTSL3_spooler.png
-│   ├── 05_JTSL4_ipconfig.png
-│   └── 06_JTSL8_security.png
+│   ├── 04_JTSL4_resolved.png
+│   ├── 05_JTSL2_resolved.png
+│   ├── 06_JTSL8_escalated.png
+│   ├── 07_JTSL3_escalated.png
+│   └── 08_JTSL5_resolved.png
 └── tickets
      └── tickets_summary.md
 ```
@@ -109,11 +111,11 @@ jira-ticketing-system-lab
 
 | ID | Tytuł | Priorytet | Kategoria | Status |
 |----|-------|-----------|-----------|--------|
-| JTSL1 | Nie mogę się zalogować – konto zablokowane | 🔴 HIGH | Konta |  OPEN  |
-| JTSL2 | Brak dysku Z: | 🟡 MEDIUM | Sieć | OPEN  |
-| JTSL3 | Drukarka w pokoju 204 nie drukuje – czeka kilka osób | 🟡 MEDIUM | Sprzęt |  OPEN  |
-| JTSL4 | Brak internetu i brak dostępu do CRM – nie mogę pracować | 🔴 HIGH | Sieć |  OPEN  |
-| JTSL5 | Komputer działa bardzo wolno, nie mogę otworzyć pliku Excel | 🟡 MEDIUM | Wydajność |  OPEN  |
+| JTSL1 | Nie mogę się zalogować – konto zablokowane | 🔴 HIGH | Konta |  RESOLVED  |
+| JTSL2 | Brak dysku Z: | 🟡 MEDIUM | Sieć | RESOLVED  |
+| JTSL3 | Drukarka w pokoju 204 nie drukuje – czeka kilka osób | 🟡 MEDIUM | Sprzęt |  RESOLVED  |
+| JTSL4 | Brak internetu i brak dostępu do CRM – nie mogę pracować | 🔴 HIGH | Sieć |  RESOLVED  |
+| JTSL5 | Komputer działa bardzo wolno, nie mogę otworzyć pliku Excel | 🟡 MEDIUM | Wydajność |  ESCALATED  |
 | JTSL8 | Kliknąłem link w mailu i chyba coś się stało – proszę o pomoc | ‼️ HIGHEST | Bezpieczeństwo |  ESCALATED  |
 
 
@@ -145,7 +147,7 @@ OPEN → IN PROGRESS → [AWAITING USER] → [ESCALATED] → RESOLVED → CLOSED
 
 ## Zasady ogólne
 
-- Podczas obsługi zgłoszeń istotne jest aby priorytetyzować swoje działanie. Służy do tego wbudowana funkcja ustalania priorytetu zgłoszenia. Przykładowo JTSL6 (Incydent bezpieczeństwa) będzie miał zdecydowanie wyższy priorytet niż JTSL5 (Wolne działanie komputera) z powodu wpływu dany problem może wywieść na całą firmę i ciągłość biznesową.
+- Podczas obsługi zgłoszeń istotne jest aby priorytetyzować swoje działanie. Służy do tego wbudowana funkcja ustalania priorytetu zgłoszenia. Przykładowo JTSL8 (Incydent bezpieczeństwa) będzie miał zdecydowanie wyższy priorytet niż JTSL5 (Wolne działanie komputera) z powodu wpływu dany problem może wywieść na całą firmę i ciągłość biznesową.
 
 - Praca ze zgłoszeniami wymaga od technika jasnej i klarownej komunikacji z użytkownikiem na każdym etapie rozwiązywania problemu. Użytkownik musi być informowany o postępach w formie zrozumiałej dla osoby nietechnicznej. Technik powinien unikać używania żargonu lub slangu branżowego.
 
@@ -153,21 +155,81 @@ OPEN → IN PROGRESS → [AWAITING USER] → [ESCALATED] → RESOLVED → CLOSED
 
 - Technik nie powinien zakładać, że zna rozwiązanie problemu nawet gdy wydaje mu się, że jest o tym przekonany. Ważnym etapem rozwiązywania zgłoszeń jest dopytywanie użytkownika o szczegóły problemu tak aby poszerzyć swoje spojrzenie na daną nieprawidłowość.
 
+- W przypadku pilnych zgłoszeń istotne jest opracowanie planu B aby zachować ciągłość biznesową. Przykład. Zgłoszenie JTSL 4 - Konfiguracja Wi-Fi dla pracownika w przypadku nierozwiązania problemu
+
+- Po rozwiązaniu zgłoszenia i ustaleniu przyczyny warto dodać notatkę wewnętrzną dzięki czemu jeśli problem się powtórzy znacznie ułatwi to diagnozę.
 
 
-## Przykłady z projektu
 
-- Zgłoszenie JTSL 1 (Konta) - in progress
+## Przykłady z projektu - realizacja w kolejności zgodnej z ustalonym priorytetem.
 
-- Zgłoszenie JTSL 2 (Sieć) - in progress
 
-- Zgłoszenie JTSL 3 (Sprzęt) - in progress
+**Pełna dokumentacja odpowiedzi technika i komentarze do użytkowników dostępne na screenach w folderze `/screenshots`**
 
-- Zgłoszenie JTSL 4 (Wydajność) - in progress
 
-- Zgłoszenie JTSL 5 (Konta) - in progress
+- Zgłoszenie JTSL 8 (Bezpieczeństwo) 
 
-- Zgłoszenie JTSL 8 (Bezpieczeństwi) to krytyczna sytuacja zagrażająca całej firmie. Zgłoszenie zostało eskalowane wyżej, a do użytkownika wysłano zrozumiałą instrukcję postepowania (izolacja sieci)
+> [screenshots/06_JTSL8_escalated.png](screenshots/06_JTSL8_escalated.png)
+
+Pracownik kliknął w podejrzany link. To krytyczna sytuacja zagrażająca całej firmie. Zgłoszenie zostało eskalowane wyżej, a do użytkownika wysłano zrozumiałą instrukcję postępowania zgodną z najlepszymi praktykami w przypadku ryzyka infekcji malware na system firmowy:
+
+  	1. Izolacja komputera na którym doszło do incydentu od reszty sieci firmowej poprzez wyłączenie Wi-Fi lub odłączenie kabla RJ-45
+	2. Reset hasła konta firmowego w domenie
+	3. Prośba o informację czy hasło konta firmowego w domenie było używane do innych usług firmowych takich jak np. VPN
+
+
+- Zgłoszenie JTSL 4 (Sieć) 
+
+> [screenshots/04_JTSL4_resolved.png](screenshots/04_JTSL4_resolved.png)
+
+Pracownik zgłosił problemy z połączeniem sieciowym oraz potrzebę pilnego rozwiązania (spotkania z klientami). Pracownik przekazał informację sugerujące nieprawidłowości w warstwie fizycznej co udało się potwierdzić poprzez zaproponowaną kolejność kroków diagnostycznych:
+
+	1. Poprawność połączenia (ROOT CAUSE)
+	2. Weryfikacja uszkodzeń kabla
+	3. Weryfikacja uszkodzeń gniazda sieciowego
+
+- Zgłoszenie JTSL 1 (Konta)
+
+> [screenshots/03_JTSL1_resolved.png](screenshots/03_JTSL1_resolved.png)
+
+Pracownik zgłosił zablokowane konto firmowe. Blokada została spowodowana wielokrotnymi nieudanymi próbami logowania. Z przyczyn ograniczenia ryzyka ataków typu Brute Force w Active directory jest ustawiona polityka blokady hasła po kilku nieudanych próbach logowania. Użytkownikowi zaproponowano następujące kroki:
+
+	1. Odblokowanie konta oraz ustawienie hasła tymczasowego
+	2. Zmiana hasła przez użytkownika
+	3. Aktualizacja hasła na innych urządzeniach korzystających z konta firmowego
+
+
+- Zgłoszenie JTSL 2 (Sieć) 
+
+> [screenshots/05_JTSL2_resolved.png](screenshots/05_JTSL2_resolved.png)
+
+Użytkownik zgłasza braku dostępu do dysku Z: w zasobach sieciowych po urlopie. Po dłuższej nieobecności Windows potrafi "zapomnieć" mapowania dysku sieciowego lub mogły wygasnąć poświadczenia konta. Skoro kolega obok widzi dysk problem najprawdopodobniej leży w konfiguracji lub uprawnieniach. Polecono użytkownikowi ręczne zmapowanie dysku Z: przez GUI z pomocą szczegółowych instrukcji.
+	
+
+
+- Zgłoszenie JTSL 5 (Wydajność/Software) 
+
+> [screenshots/08_JTSL5_escalated.png](screenshots/08_JTSL5_escalated.png)
+
+Pracownik zgłasza spowolnione działanie 4 letniej maszyny. Podejrzewa wirusa ale informuje, że nic nowego ostatnio nie było instalowane. Najbardziej prawdopodobną przyczyną jest działanie aplikacji w tle zużywających pamięć ale będzie potrzebna dodatkowa weryfikacja. Kolejnym potencjalnym problemem powodującym spowolnienie może być przegrzewanie się komputera jeśli od 4 lat nie był czyszczony. Malware to mało prawdopodobna przyczyna w tym przypadku ale nie warto jej wykluczać. Z uwagi na fakt, że Pani Joanna nie jest osobą techniczną, a połączenie zdalne może być utrudnione przez powolne działanie komputera najszybszą opcją rozwiązania problemu będzie wizyta przy stanowisku pracy Pani Joanny. Wykonano następujące kroki:
+ 	
+	1. Weryfikacja obciążenia komponentów przy pomocy Task Managera - procesy w tle, programy w autostarcie - wykazano 100% użycia pamięci RAM.
+	2. Zastosowano tymczasowe rozwiązanie w postaci wyłączenia nieużywanych aplikacji w tle. Polecono użytkownikowi tymczasowo wstrzymać się z używaniem kilku aplikacji jednocześnie.
+	3. Zlecono rozszerzenie pamięci RAM w komputerze użytkownika (eskalacja)
+	
+
+
+
+- Zgłoszenie JTSL 3 (Konta)
+
+> [screenshots/07_JTSL3_resolved.png](screenshots/07_JTSL3_resolved.png)
+
+Użytkownik zgłasza problem z drukarką - działa ale nie drukuje. Najbardziej prawdopodobną przyczyną będzie zawieszony Print Spooler lub problemy drukarki w połączeniu z siecią. Wykonano następujące kroki:
+
+	1. Użycie narzędzia ping na adres IP drukarki - potwierdzono dostępność w sieci
+	2. Wyczyszczenie kolejki drukowania oraz restart usługi Spooler - print server
+	3. Polecono użytkownikowi restart zasilania - rozwiązuje problem gdy w kolejce druku jest uszkodzony plik
+	4. Zaproponowano użytkownikowi wyjście awaryjne
 
 
 
@@ -189,22 +251,21 @@ OPEN → IN PROGRESS → [AWAITING USER] → [ESCALATED] → RESOLVED → CLOSED
 
 
 
-- Przykładowy ticket (JTSL8)
-
-> [screenshots/06_JTSL8_security.png](screenshots/06_JTSL8_security.png)
-
-
-
-
 ## Czego się nauczyłem
 
 
 
 - Konfiguracja Jira Service Management na platformie Atlassian
 - Obsługa workflow i zarządzanie statusami zgłoszeń
-- Diagnostyka sieci: (`ipconfig`, `ping`, `tracert`)
-- Reakcja na incydent bezpieczeństwa (phishing)
-
+- Diagnostyka najczęstszych problemów
+- Diagnostyka warstwy fizycznej sieci (kabel, gniazdo, lampka NIC)
+- Pierwsza reakcja na incydent phishingowy — izolacja, reset hasła, eskalacja
+- Analiza zużycia zasobów przez Task Manager (RAM 100%)
+- Ręczne mapowanie dysku sieciowego przez GUI
+- Praktyczne zastosowanie eskalacji — kiedy i jak przekazać ticket wyżej
+- Dokumentowanie kroków przed eskalacją tak żeby kolejny technik miał pełny kontekst
+- Odpowiednia komunikacja z użytkownikiem końcowym
+- Dodawanie komentarzy publicznych (Odpowiedz klientowi) vs notatek wewnętrznych (Dodaj notatkę wewnętrzną) — i kiedy używać którego
 
 ---
 
