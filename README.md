@@ -138,9 +138,6 @@ flowchart LR
     RESOLVED --> CLOSED
 ```
 
-GitHub renderuje Mermaid natywnie od 2022 roku, więc diagram pojawi się automatycznie bez żadnych pluginów. Strzałka z etykietą `użytkownik odpowiedział` na pętli powrotnej do IN PROGRESS ładnie tłumaczy ten niuans workflow.
-
-
 ## Opis każdego statusu
 
 **OPEN** - oznacza, że ticket został utworzony przez użytkownika i czeka aż któryś z techników go podejmie
