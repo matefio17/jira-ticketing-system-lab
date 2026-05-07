@@ -128,29 +128,14 @@ jira-ticketing-system-lab
 ## Workflow
 
 ```mermaid
-flowchart TD
-    A([🎫 OPEN\nZgłoszenie utworzone]):::gray
-    B([⚙️ IN PROGRESS\nTechnik pracuje]):::blue
-    C([⏳ AWAITING USER\nCzeka na użytkownika]):::amber
-    D([🔺 ESCALATED\nEskalacja wyżej]):::coral
-    E([✅ RESOLVED\nProblem rozwiązany]):::teal
-    F([🔒 CLOSED\nTicket zamknięty]):::green
-
-    A --> B
-    B --> C
-    B --> D
-    C -->|użytkownik odpowiedział| B
-    C --> E
-    D --> E
-    E --> F
-
-    classDef gray  fill:#D3D1C7,stroke:#888780,color:#2C2C2A
-    classDef blue  fill:#B5D4F4,stroke:#185FA5,color:#042C53
-    classDef amber fill:#FAC775,stroke:#BA7517,color:#412402
-    classDef coral fill:#F5C4B3,stroke:#993C1D,color:#4A1B0C
-    classDef teal  fill:#9FE1CB,stroke:#0F6E56,color:#04342C
-    classDef green fill:#C0DD97,stroke:#3B6D11,color:#173404
-` ` `
+flowchart LR
+    OPEN --> IN_PROGRESS
+    IN_PROGRESS --> AWAITING_USER
+    IN_PROGRESS --> ESCALATED
+    AWAITING_USER --> IN_PROGRESS
+    AWAITING_USER --> RESOLVED
+    ESCALATED --> RESOLVED
+    RESOLVED --> CLOSED
 ```
 
 GitHub renderuje Mermaid natywnie od 2022 roku, więc diagram pojawi się automatycznie bez żadnych pluginów. Strzałka z etykietą `użytkownik odpowiedział` na pętli powrotnej do IN PROGRESS ładnie tłumaczy ten niuans workflow.
