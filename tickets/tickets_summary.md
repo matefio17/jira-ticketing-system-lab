@@ -98,7 +98,7 @@ Konta portal-only nie zajmują licencji agenta i są bezpłatne na planie Free.
 
 ---
 
-### JTSL8 · Robert Michalski · High
+### JTSL8 · Robert Michalski · Highest
 
 **Zgłoszone:** 06.05.2025, 08:51 · Magazyn, biuro logistyki
 
