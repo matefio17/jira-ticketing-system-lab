@@ -122,11 +122,6 @@ jira-ticketing-system-lab
 
 ## Workflow
 
-
-- Diagram statusów
-
-## Workflow
-
 ```mermaid
 flowchart LR
     OPEN --> IN_PROGRESS
