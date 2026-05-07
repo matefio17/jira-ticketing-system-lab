@@ -97,8 +97,8 @@ jira-ticketing-system-lab
 │   ├── 04_JTSL4_resolved.png
 │   ├── 05_JTSL2_resolved.png
 │   ├── 06_JTSL8_escalated.png
-│   ├── 07_JTSL3_escalated.png
-│   └── 08_JTSL5_resolved.png
+│   ├── 07_JTSL3_resolved.png
+│   └── 08_JTSL5_escalated.png
 └── tickets
      └── tickets_summary.md
 ```
@@ -147,7 +147,7 @@ OPEN → IN PROGRESS → [AWAITING USER] → [ESCALATED] → RESOLVED → CLOSED
 
 ## Zasady ogólne
 
-- Podczas obsługi zgłoszeń istotne jest aby priorytetyzować swoje działanie. Służy do tego wbudowana funkcja ustalania priorytetu zgłoszenia. Przykładowo JTSL8 (Incydent bezpieczeństwa) będzie miał zdecydowanie wyższy priorytet niż JTSL5 (Wolne działanie komputera) z powodu wpływu dany problem może wywieść na całą firmę i ciągłość biznesową.
+- Podczas obsługi zgłoszeń istotne jest aby priorytetyzować swoje działanie. Służy do tego wbudowana funkcja ustalania priorytetu zgłoszenia. Przykładowo JTSL8 (Incydent bezpieczeństwa) będzie miał zdecydowanie wyższy priorytet niż JTSL5 (Wolne działanie komputera) z powodu wpływu dany problem może mieć na całą firmę i ciągłość biznesową.
 
 - Praca ze zgłoszeniami wymaga od technika jasnej i klarownej komunikacji z użytkownikiem na każdym etapie rozwiązywania problemu. Użytkownik musi być informowany o postępach w formie zrozumiałej dla osoby nietechnicznej. Technik powinien unikać używania żargonu lub slangu branżowego.
 
@@ -220,7 +220,7 @@ Pracownik zgłasza spowolnione działanie 4 letniej maszyny. Podejrzewa wirusa a
 
 
 
-- Zgłoszenie JTSL 3 (Konta)
+- Zgłoszenie JTSL 3 (Sprzęt)
 
 > [screenshots/07_JTSL3_resolved.png](screenshots/07_JTSL3_resolved.png)
 
@@ -246,7 +246,7 @@ Użytkownik zgłasza problem z drukarką - działa ale nie drukuje. Najbardziej 
 
 - Lista zgłoszeń
 
-> [screenshots/02_ticket_list.png](02_ticket_list.png)
+> [screenshots/02_ticket_list.png](screenshots/02_ticket_list.png)
 
 
 
@@ -265,6 +265,7 @@ Użytkownik zgłasza problem z drukarką - działa ale nie drukuje. Najbardziej 
 - Praktyczne zastosowanie eskalacji — kiedy i jak przekazać ticket wyżej
 - Dokumentowanie kroków przed eskalacją tak żeby kolejny technik miał pełny kontekst
 - Odpowiednia komunikacja z użytkownikiem końcowym
+- Zarządzanie oczekiwaniami użytkownika w sytuacjach krytycznych
 - Dodawanie komentarzy publicznych (Odpowiedz klientowi) vs notatek wewnętrznych (Dodaj notatkę wewnętrzną) — i kiedy używać którego
 
 ---
